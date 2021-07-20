@@ -1,0 +1,15 @@
+---
+application:
+  name: "ultroid"
+  project: "ultroid"
+  organization: "QoveryCommunity"
+databases:
+- type: "REDIS"
+  name: "ultroid-db"
+  version: "6"
+routers:
+- name: "main-ultroid"
+  routes:
+  - application_name: "ultroid"
+    paths:
+    - "/*"
